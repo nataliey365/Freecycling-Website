@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel ="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>Freecycling!</title>
+        <link rel="icon" type="image/x-icon" href="logo.png">
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div class="left-nav">
+            <img class="logo" src="logo.png" alt="Freecycling logo">
+            <ul>
+                <li class="left-li" tabindex="1">About</li>
+                <li class="left-li" tabindex="2">Events</li>
+                <li class="left-li" tabindex="3">Catalogue</li>
+            </ul>
+            </div>
+            <div class="right-nav">
+                <input class="search" tabindex="4" type="text" placeholder="Search...">
+                <ul>
+                    <li tabindex="5"><i class="fa fa-plus-square-o" aria-label="Add post"></i></li>
+                    <li tabindex="6"><i class="fa fa-heart-o" aria-label="Favourited items"></i></li>
+                    <li tabindex="7"><i class="fa fa-user-circle-o" aria-label="Profile"></i></li>
+                
+                </ul>
+            </div>
+        </nav>
+
+        <div class="info">
+            <div class="about">
+                <h1>Cycling for Sustainability</h1>
+                <p>
+                    Freecycling! is a community initiative encouraging people to give away items that they no longer need for free. Our mission is to prevent waste and overconsumption by moving the items that we already have around the community. Not only does it stop perfectly good items from going into landfills, it also means you might get something you're after for free! It is a completely free platform and sign up is super simple. We welcome everyone!
+                </p>
+                <div class="about-btns">
+                <button class="btn join-btn" tabindex="8" id="trigger-modal">Join the Community</button>
+                
+            </div>
+        </div>
+        <div>
+            <img class="photo" src="support.jpg" width="420" height="600" alt="Supporting photo of a vintage market"> <!--Campbell, M. (2024). A Group of People Walking Down a Street Next to a Pile of Items [Photograph]. Unsplash. https://unsplash.com/photos/a-group-of-people-walking-down-a-street-next-to-a-pile-of-items-mIRKd_sWY1A-->
+        </div>
+
+        <div id="modal-window" class="modal">
+            <div class="modal-content">
+                <button class="close" aria-label="close" tabindex="9">x</button>
+                <div class="modal-info">
+                <h1 class="sign-up">Sign Up</h1> 
+                <div id="form-ct" class="form-ct">
+                    <form>
+                    <div id="user-details">
+                        <label for="name">Given Name:</label><br>
+                        <input type="text" id="firstName"><br>
+                        <label for="surname">Surname:</label><br>
+                        <input type="text" id="surname"><br>
+                        <label for="username">Username:</label><br>
+                        <input type="text" id="username"><br>
+                        <label for="password">Password:</label><br>
+                        <input type="text" id="password">
+                    </div>
+                    <div id="address-details" class="address-form">
+                        <label for="home-address">Home Address:</label><br>
+                        <input type="text" id="homeAddress"><br>
+                        <label for="work-address">Work Address:</label><br>
+                        <input type="text" id="workAddress"><br>
+                    </div>
+                    <div id="contact-details">
+                        <label for="mobile">Mobile Number:</label><br>
+                        <input type="text" id="mobile"><br>
+                        <label for="email">Email:</label><br>
+                        <input type="text" id="email">
+                    </div>
+                    <input class="btn submit" tabindex="10" type="submit" value="Submit">
+                    </form>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="explore">
+            <a>
+            <div class="explore-tab" tabindex="12"><h3>Explore</h3><h2>Furniture</h2></div>
+            </a>
+            <a>
+            <div class="explore-tab" tabindex="13"><h3>Explore</h3><h2>Home Goods</h2></div>
+            </a>
+            <a>
+            <div class="explore-tab" tabindex="14"><h3>Explore</h3><h2>Clothing</h2></div>
+            </a>
+        </div>
+
+
+
+
+        <script>
+            var modal = document.getElementById("modal-window");
+            var btn = document.getElementById("trigger-modal");
+            var close = document.getElementsByClassName("close")[0];
+
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            close.onclick = function() {
+                modal.style.display = "none";
+            }
+        </script>
+    </body>
+</html>
